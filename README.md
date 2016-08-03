@@ -1,7 +1,7 @@
 # Tachie Transition
 [![Apache 2.0 License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-使用 RenderScript 实现常见于游戏中的立繪切换算法，并与系统自带 ImageSwitcher 的渐变实现（两个 ImageView 相继 fadeIn、fadeOut）做比较。
+使用 RenderScript 实现立繪切换算法（常见于游戏中），并与系统自带的 ImageSwitcher 的图片切换（两个 ImageView 相继 fadeIn、fadeOut）做比较。
 
 ### Comparison
 ![preview](art/cmp.gif)
