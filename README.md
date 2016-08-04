@@ -1,10 +1,12 @@
 # Tachie Transition
 [![Apache 2.0 License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-使用 RenderScript 实现立繪切换算法（常见于游戏中），并与系统自带的 ImageSwitcher 的图片切换（两个 ImageView 相继 fadeIn、fadeOut）做比较。
+使用 RenderScript 实现的立繪（Taichie）切换算法（常见于游戏中），原理是对每个像素进行源颜色和目标颜色的权重混合。
 
-### Comparison
+### Compare with the `ImageSwitcher`
 ![preview](art/cmp.gif)
+
+`ImageSwitcher` 的切换实际上是借助两个 `ImageView` 完成的，对两个 `ImageView` 分别进行 FadeIn & FadeOut 动效实现图片间的切换。缺点在于像素的颜色并非是 **线性变化** 的，并且因为两个 `ImageView` 位置上处于前后的关系，所以第 `n` 和第 `n + 1` 次的切换效果并不能保持一致。
 
 ### RenderScript
 ```c
